@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Mental Health Mood Tracker</h2>
+
+    <label>Select Your Mood:</label>
+    <select id="mood">
+        <option value="Happy">😊 Happy</option>
+        <option value="Neutral">😐 Neutral</option>
+        <option value="Sad">😢 Sad</option>
+        <option value="Angry">😡 Angry</option>
+        <option value="Stressed">😰 Stressed</option>
+    </select>
+
+    <label>Add a Note (Optional):</label>
+    <textarea id="note" placeholder="Write how you feel..."></textarea>
+
+    <button onclick="saveMood()">Save Entry</button>
+
+    <h3>Today's Entries</h3>
+    <ul id="moodList"></ul>
+
+    <h3>Weekly Summary</h3>
+    <div id="summary"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
